@@ -4,3 +4,6 @@
 
 -- Disable cursor styling
 vim.o.guicursor = ""
+
+-- Draw 80-column ruler
+vim.o.colorcolumn = "80"
