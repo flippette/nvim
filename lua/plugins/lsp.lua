@@ -12,6 +12,7 @@ return {
         default_settings = {
           ["rust-analyzer"] = {
             check = {
+              allTargets = false,
               command = "clippy",
             },
           },
