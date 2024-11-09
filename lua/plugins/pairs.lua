@@ -1,6 +1,6 @@
 return {
   "echasnovski/mini.pairs",
-  config = {
+  opts = {
     mappings = {
       ["'"] = false,
     },
