@@ -7,6 +7,3 @@ vim.o.guicursor = ""
 
 -- Disable animations
 vim.g.snacks_animate = false
-
--- Draw 80-column ruler
-vim.o.colorcolumn = "80"
