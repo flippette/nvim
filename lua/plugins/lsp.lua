@@ -1,8 +1,15 @@
 return {
+  { "neovim/nvim-lspconfig" },
   {
-    "neovim/nvim-lspconfig",
+    "chrisgrieser/nvim-lsp-endhints",
+    event = "LspAttach",
     opts = {
-      inlay_hints = { enabled = false },
+      icons = {
+        type = "-> ",
+        parameter = "<- ",
+        offspec = "",
+        unknown = "",
+      },
     },
   },
   {
