@@ -7,3 +7,14 @@ vim.o.guicursor = ""
 
 -- Disable animations
 vim.g.snacks_animate = false
+
+-- Auto-updates
+vim.api.nvim_create_autocmd("VimEnter", {
+  group = vim.api.nvim_create_augroup(
+    "lazyvim_autoupdate",
+    { clear = true }
+  ),
+  callback = function()
+    require("lazy").update({ show = false })
+  end,
+})
