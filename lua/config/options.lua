@@ -25,3 +25,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
     require("lazy").update({ show = false })
   end,
 })
+
+-- Disable the default Rust ftplugin settings
+-- (this sets sw=4)
+vim.g.rust_recommended_style = false
