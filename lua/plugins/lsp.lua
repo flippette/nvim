@@ -18,4 +18,9 @@ return {
       vim.api.nvim_set_hl(0, "LspInlayHint", inlay_hl)
     end,
   },
+  {
+    "neovim/nvim-lspconfig",
+    -- enable LSP folds
+    dependencies = "kevinhwang91/nvim-ufo",
+  },
 }
