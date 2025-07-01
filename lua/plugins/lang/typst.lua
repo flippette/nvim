@@ -9,6 +9,19 @@ return {
     opts = {
       ensure_installed = {
         "tinymist",
+        "typstyle",
+      },
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        tinymist = {
+          settings = {
+            formatterMode = "typstyle",
+          },
+        },
       },
     },
   },
