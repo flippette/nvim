@@ -4,7 +4,6 @@ return {
     ensure_installed = {
       "cuda",
       "dart",
-      "matlab",
     },
   },
 }
