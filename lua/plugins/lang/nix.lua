@@ -1,8 +1,8 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
+  "mason-org/mason.nvim",
   opts = {
     ensure_installed = {
-      "cuda",
+      "nixfmt",
     },
   },
 }

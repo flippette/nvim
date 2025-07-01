@@ -18,27 +18,4 @@ return {
       vim.api.nvim_set_hl(0, "LspInlayHint", inlay_hl)
     end,
   },
-  {
-    "mason-org/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "nixfmt",
-      },
-    },
-  },
-  {
-    "mrcjkb/rustaceanvim",
-    opts = {
-      server = {
-        default_settings = {
-          ["rust-analyzer"] = {
-            check = {
-              allTargets = false,
-              command = "clippy",
-            },
-          },
-        },
-      },
-    },
-  },
 }
