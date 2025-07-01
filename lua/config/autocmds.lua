@@ -24,3 +24,9 @@ vim.api.nvim_create_autocmd("BufEnter", {
     update_hl(0, prefix .. "Ok", bg_config)
   end,
 })
+
+-- REALLY disable wrapping
+vim.api.nvim_create_augroup(
+  "lazyvim_wrap_spell",
+  { clear = true }
+)
