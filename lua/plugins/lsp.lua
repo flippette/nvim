@@ -23,4 +23,18 @@ return {
     -- enable LSP folds
     dependencies = "kevinhwang91/nvim-ufo",
   },
+  {
+    "kevinhwang91/nvim-ufo",
+    dependencies = "kevinhwang91/promise-async",
+    config = function(_, _)
+      vim.o.foldcolumn = "0"
+      vim.o.foldlevel = 99
+      vim.o.foldlevelstart = 99
+      vim.o.foldenable = true
+
+      local ufo = require("ufo")
+      vim.keymap.set("n", "zR", ufo.openAllFolds)
+      vim.keymap.set("n", "zM", ufo.closeAllFolds)
+    end,
+  },
 }
