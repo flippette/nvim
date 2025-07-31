@@ -18,6 +18,9 @@ vim.o.shiftwidth = 2
 -- Disable window wrapping
 vim.o.wrap = false
 
+-- Disable system clipboard (use "+ instead)
+vim.o.clipboard = "unnamed"
+
 -- Auto-updates
 vim.api.nvim_create_autocmd("VimEnter", {
   group = vim.api.nvim_create_augroup(
