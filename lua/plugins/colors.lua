@@ -13,7 +13,7 @@ return {
   },
 
   {
-    "flippette/LazyVim",
+    "LazyVim/LazyVim",
     opts = { colorscheme = "catppuccin" },
   },
 }
