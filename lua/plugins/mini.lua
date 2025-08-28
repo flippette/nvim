@@ -1,6 +1,6 @@
 return {
   {
-    "echasnovski/mini.ai",
+    "nvim-mini/mini.ai",
     opts = function()
       local ai = require("mini.ai")
       local use_ts = { use_nvim_treesitter = true }
@@ -34,7 +34,7 @@ return {
     end,
   },
   {
-    "echasnovski/mini.pairs",
+    "nvim-mini/mini.pairs",
     opts = {
       mappings = {
         ["'"] = false,
