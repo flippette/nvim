@@ -5,6 +5,8 @@ return {
       "cuda",
       "dart",
       "gleam",
+      "haskell",
+      "matlab",
     },
   },
 }
