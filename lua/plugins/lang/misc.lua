@@ -7,6 +7,7 @@ return {
       "gleam",
       "haskell",
       "matlab",
+      "sql",
     },
   },
 }
