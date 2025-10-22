@@ -52,6 +52,17 @@ return {
     end,
   },
   {
+    "nvim-neotest/neotest",
+    dependencies = {
+      "stevanmilic/neotest-scala",
+    },
+    opts = {
+      adapters = {
+        ["neotest-scala"] = {},
+      },
+    },
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     opts = {
       ensure_installed = { "scala" },
