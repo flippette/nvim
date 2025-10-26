@@ -4,7 +4,7 @@ return {
     opts = {
       ensure_installed = {
         "alejandra",
-        "statix",
+        -- "statix",
       },
     },
   },
