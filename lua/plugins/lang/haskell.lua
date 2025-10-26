@@ -54,8 +54,8 @@ return {
     "mason-org/mason.nvim",
     opts = {
       ensure_installed = {
-        "fourmolu",
         "haskell-debug-adapter",
+        "ormolu",
       },
     },
   },
@@ -95,7 +95,7 @@ return {
     optional = true,
     opts = {
       formatters_by_ft = {
-        haskell = { "fourmolu" },
+        haskell = { "ormolu" },
         cabal = { "cabal_fmt" },
       },
     },
