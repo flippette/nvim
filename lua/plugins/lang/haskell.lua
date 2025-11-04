@@ -55,7 +55,7 @@ return {
     opts = {
       ensure_installed = {
         "haskell-debug-adapter",
-        "ormolu",
+        "fourmolu",
       },
     },
   },
@@ -95,7 +95,7 @@ return {
     optional = true,
     opts = {
       formatters_by_ft = {
-        haskell = { "ormolu" },
+        haskell = { "fourmolu" },
         cabal = { "cabal_fmt" },
       },
     },
