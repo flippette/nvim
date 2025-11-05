@@ -30,3 +30,17 @@ vim.api.nvim_create_augroup(
   "lazyvim_wrap_spell",
   { clear = true }
 )
+
+-- Custom tree-sitter grammars
+vim.api.nvim_create_autocmd("User", {
+  pattern = "TSUpdate",
+  callback = function()
+    require("nvim-treesitter.parsers").idris = {
+      install_info = {
+        url = "https://github.com/kayhide/tree-sitter-idris",
+        revision = "c56a25cf57c68ff929356db25505c1cc4c7820f6",
+      },
+    }
+  end,
+})
+vim.treesitter.language.register("idris", { "idr" })

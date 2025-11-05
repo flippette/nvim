@@ -5,6 +5,7 @@ return {
       "cuda",
       "dart",
       "gleam",
+      "idris",
       "matlab",
       "sql",
     },
