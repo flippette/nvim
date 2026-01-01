@@ -7,6 +7,7 @@ return {
       "gleam",
       "idris",
       "matlab",
+      "slint",
       "sql",
     },
   },
