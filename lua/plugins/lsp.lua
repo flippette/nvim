@@ -21,6 +21,15 @@ return {
   {
     "neovim/nvim-lspconfig",
     dependencies = { "kevinhwang91/nvim-ufo" },
+    opts = {
+      diagnostics = {
+        virtual_text = {
+          format = function(diag)
+            return string.match(diag.message, "^[^\n]*")
+          end,
+        },
+      },
+    },
   },
   {
     "kevinhwang91/nvim-ufo",
