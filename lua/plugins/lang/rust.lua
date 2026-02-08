@@ -7,6 +7,10 @@ return {
           check = {
             allTargets = false,
             command = "clippy",
+            extraArgs = {
+              "--",
+              "-Wclippy::pedantic",
+            },
           },
         },
       },
