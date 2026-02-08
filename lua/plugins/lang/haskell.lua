@@ -1,5 +1,3 @@
--- basically the LazyVim extra, but don't install HLS from Mason
-
 return {
   {
     "nvim-treesitter/nvim-treesitter",
